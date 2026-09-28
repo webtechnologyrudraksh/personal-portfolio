@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+
+/* Navigation */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    background: #111827;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+
+/* Home */
+
+.home {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(135deg, #111827, #1e3a8a);
+    color: white;
+
+    padding: 40px 20px;
+}
+.profile-photo {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.hello {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.home h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.home h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: white;
+    color: #111827;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+}
+
+.second-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Sections */
+
+.section {
+    max-width: 900px;
+
+    margin: 60px auto;
+    padding: 45px 30px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+/* Skills */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills span {
+    padding: 12px 20px;
+
+    background: #111827;
+    color: white;
+
+    border-radius: 25px;
+}
+
+
+/* Cards */
+
+.card {
+    padding: 20px;
+
+    background: #f1f5f9;
+
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background: #111827;
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home h1 {
+        font-size: 40px;
+    }
+
+    .home h2 {
+        font-size: 24px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+} 
+.social-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: white;
+    color: #111827;
+} 
+/* Projects */
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    padding: 25px;
+
+    background: #f1f5f9;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+}
+
+.project-btn {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    background: #111827;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 20px;
+}
+
+.project-btn:hover {
+    background: #1e3a8a;
+}
+
+
+/* Project cards on mobile */
+
+@media (max-width: 800px) {
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* Contact */
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-intro {
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-card {
+    padding: 25px;
+
+    background: #f1f5f9;
+    color: #222;
+
+    text-decoration: none;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    background: #e2e8f0;
+}
+
+.contact-card h3 {
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 14px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .contact-links {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Skills Section */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background: #f1f5f9;
+    color: #1e293b;
+    padding: 22px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.skill-card h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.skill-card p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* Coursework */
+
+.coursework-heading {
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.coursework-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.coursework-card {
+    background: #f1f5f9;
+    color: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.coursework-card:hover {
+    transform: translateY(-5px);
+}
+
+.coursework-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.coursework-card ul {
+    padding-left: 20px;
+}
+
+.coursework-card li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.learning-badge {
+    display: inline-block;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 800px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .coursework-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
+.education-card {
+    padding: 30px;
+    background: #f1f5f9;
+    border-radius: 15px;
+    border-left: 5px solid #1e3a8a;
+}
+
+.education-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.college-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.current-semester {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #1e3a8a;
+}
