@@ -472,6 +472,25 @@ footer {
     font-size: 18px;
     margin-bottom: 8px;
 }
+/* Footer */
+footer {
+    background: #0b1220;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+    border-top: 1px solid #24324a;
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+footer p:last-child {
+    color: #b8c4d6;
+    font-size: 13px;
+}
 
 .current-semester {
     margin-top: 15px;
